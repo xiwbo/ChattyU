@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">ChattyU</string>
+	<string name="splash_screen">This text is a splashScreen</string>
+</resources>
