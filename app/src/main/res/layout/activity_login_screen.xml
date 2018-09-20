@@ -29,11 +29,13 @@
 			android:id="@+id/email_login_form"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:orientation="vertical">
+			android:orientation="vertical"
+			android:layout_gravity="center_vertical">
 
 			<android.support.design.widget.TextInputLayout
 				android:layout_width="match_parent"
-				android:layout_height="wrap_content">
+				android:layout_height="wrap_content"
+				android:padding="10dp">
 
 				<AutoCompleteTextView
 					android:id="@+id/txtEmail"
@@ -42,13 +44,15 @@
 					android:hint="@string/prompt_email"
 					android:inputType="textEmailAddress"
 					android:maxLines="1"
-					android:singleLine="true" />
+					android:singleLine="true"
+					android:textSize="24sp" />
 
 			</android.support.design.widget.TextInputLayout>
 
 			<android.support.design.widget.TextInputLayout
 				android:layout_width="match_parent"
-				android:layout_height="wrap_content">
+				android:layout_height="wrap_content"
+				android:padding="10dp">
 
 				<EditText
 					android:id="@+id/txtPassword"
@@ -60,18 +64,22 @@
 					android:imeOptions="actionDone"
 					android:inputType="textPassword"
 					android:maxLines="1"
-					android:singleLine="true" />
+					android:singleLine="true"
+					android:textSize="24sp" />
 
 			</android.support.design.widget.TextInputLayout>
 
 			<Button
 				android:id="@+id/email_sign_in_button"
-				style="?android:textAppearanceSmall"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
+				style="?android:textAppearanceButton"
+				android:layout_width="215dp"
+				android:layout_height="45dp"
 				android:layout_marginTop="16dp"
+				android:background="@drawable/button_shape"
 				android:text="@string/action_login_in"
-				android:textStyle="bold" />
+				android:layout_gravity="center"
+				android:textStyle="bold"
+				android:textColor="@color/colorWhite"/>
 
 		</LinearLayout>
 	</ScrollView>
